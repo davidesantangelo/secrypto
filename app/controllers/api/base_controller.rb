@@ -3,16 +3,16 @@ class Api::BaseController < ApplicationController
 	before_filter :set_headers
 
 	def me
-    render status: :ok, json: {}
+		render status: :ok, json: {}
 	end
-
+	
 	def options
-	  set_headers
+		set_headers
 	  # this will send an empty request to the client with 200 status code (OK, can proceed)
 	  render :text => '', :content_type => 'text/plain'
 	end
 
-  protected
+	protected
 
 	# Set CORS
   def set_headers
