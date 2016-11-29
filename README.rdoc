@@ -6,8 +6,8 @@ You can use secrypto live at this url: https://secrypto.herokuapp.com
 
 # getting started
 
- git clone https://github.com/davidesantangelo/secrypto.git<br />
- cd secrypto & bundle install<br />
+ git clone https://github.com/davidesantangelo/secrypto.git
+ cd secrypto & bundle install
  rails s 
 
 # try it
