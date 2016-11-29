@@ -1,9 +1,6 @@
 # Secrypto
 encrypt, decrypt text
 
-# see in action
-You can use secrypto live at this url: https://secrypto.herokuapp.com
-
 # getting started
 
  git clone https://github.com/davidesantangelo/secrypto.git
