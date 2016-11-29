@@ -1,22 +1,17 @@
-# Secrypto
-encrypt, decrypt text
-
-# getting started
+getting started
 
  git clone https://github.com/davidesantangelo/secrypto.git
  cd secrypto & bundle install
  rails s 
 
-# try it
-
-Encrypt
+encrypt
 
 
  curl --data "text=ciao" https://secrypto.herokuapp.com/api/encrypt
 
 you receive the key to decrypt
 
-Decrypt
+decrypt
 
 
  curl --data "key=<key received>" https://secrypto.herokuapp.com/api/decrypt
