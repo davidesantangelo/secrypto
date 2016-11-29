@@ -1,3 +1,23 @@
-== README
+# Secrypto
+encrypt, decrypt text
 
-Coming soon!
+# see in action
+You can use secrypto live at this url: https://secrypto.herokuapp.com
+
+# getting started
+
+ git clone https://github.com/davidesantangelo/secrypto.git<br />
+ cd secrypto & bundle install<br />
+ rails s 
+
+# try it
+
+Encrypt
+
+https://secrypto.herokuapp.com/api/encrypt?text=ciao
+
+you receive the key to decrypt
+
+Decrypt
+
+https://secrypto.herokuapp.com/api/encrypt?key=<key>
