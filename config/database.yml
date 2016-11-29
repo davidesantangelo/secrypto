@@ -19,3 +19,4 @@ test:
 production:
   <<: *default
   pool: 15
+  url: <%= ENV['DATABASE_URL'] %>
