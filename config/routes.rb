@@ -5,4 +5,9 @@ Rails.application.routes.draw do
       post 'decrypt' => 'decrypt#decrypt'
     end
   end
+
+  namespace :api do
+    post 'encrypt' => 'encrypt#encrypt'
+    post 'decrypt' => 'decrypt#decrypt'
+  end
 end

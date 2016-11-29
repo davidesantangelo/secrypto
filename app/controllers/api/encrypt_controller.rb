@@ -1,11 +1,11 @@
-require 'crypto'
 require 'securerandom'
 
 class Api::EncryptController < Api::BaseController
   def encrypt
-    key = SecureRandom.urlsafe_base64
-    encrypt = Crypto.encrypt(params[:text], key)
+    unless params[:text].present?
+      render status: 403, json: { message: 'required param text not found' } and return
+    end
     
-    render status: 200, json: { data: encrypt, key: key }
+    render status: 200, json: { key: Document.encrypt(params[:text]) }
   end
 end
