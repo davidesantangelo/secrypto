@@ -14,10 +14,12 @@ You can use secrypto live at this url: https://secrypto.herokuapp.com
 
 Encrypt
 
-curl --data "text=ciao" https://secrypto.herokuapp.com/api/encrypt
+
+ curl --data "text=ciao" https://secrypto.herokuapp.com/api/encrypt
 
 you receive the key to decrypt
 
 Decrypt
 
-curl --data "key=<key received>" https://secrypto.herokuapp.com/api/decrypt
+
+ curl --data "key=<key received>" https://secrypto.herokuapp.com/api/decrypt
