@@ -2,7 +2,7 @@ require 'openssl'
 require 'digest'
 
 class Crypto
-  def encrypt(data, key)
+  def self.encrypt(data, key)
     cipher = OpenSSL::Cipher::Cipher.new("aes-256-cbc")
     cipher.encrypt
     cipher.key = key = Digest::SHA256.digest(key)
@@ -13,7 +13,7 @@ class Crypto
     return random_iv + encrypted
   end
 
-  def decrypt(data, key)
+  def self.decrypt(data, key)
     cipher = OpenSSL::Cipher::Cipher.new("aes-256-cbc")
     cipher.decrypt
     cipher.key = cipher_key = Digest::SHA256.digest(key)
