@@ -18,5 +18,4 @@ test:
 
 production:
   <<: *default
-  database: secrypto_production
-  host: postgres://icbumlrehvzhhe:ntI88J0qoAZbNIwTpTSeLUcNwm@ec2-54-228-213-99.eu-west-1.compute.amazonaws.com:5432/d86ltbbgdbgikm
+  pool: 15
