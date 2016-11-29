@@ -20,4 +20,4 @@ you receive the key to decrypt
 
 Decrypt
 
-https://secrypto.herokuapp.com/api/encrypt?key=<key>
+https://secrypto.herokuapp.com/api/encrypt?key=key
