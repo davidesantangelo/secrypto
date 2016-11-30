@@ -2,10 +2,9 @@ require 'crypto'
 
 class Document < ActiveRecord::Base
   def self.encrypt(text)
-    key = SecureRandom.urlsafe_base64
-    Document.create!(data: Crypto.encrypt(text, key), key: key)
+    document = Document.create!(data: Crypto.encrypt(text, generate_key), key: key)
 
-    key
+    document.key
   end
   
   def self.decrypt(key)
@@ -14,5 +13,14 @@ class Document < ActiveRecord::Base
     return false unless document
 
     Crypto.decrypt(document.data, key)
+  end
+
+  private
+
+  def generate_key
+    loop do
+      key = SecureRandom.urlsafe_base64
+      break key unless Document.where(key: key).first
+    end
   end
 end
