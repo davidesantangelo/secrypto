@@ -15,3 +15,7 @@ A simple API that allow to encrypt/decrypt text. API store the data encrypted in
 == decrypt
 
  curl --data "key=<key received>" https://secrypto.herokuapp.com/api/decrypt
+
+== license
+
+Secrypto app is released under the MIT License.
