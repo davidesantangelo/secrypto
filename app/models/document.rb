@@ -1,8 +1,13 @@
 require 'crypto'
 
 class Document < ActiveRecord::Base
+
+  def uniq_key
+    generate_key
+  end
+
   def self.encrypt(text)
-    document = Document.create!(data: Crypto.encrypt(text, generate_key), key: key)
+    document = Document.create!(data: Crypto.encrypt(text, uniq_key), key: key)
 
     document.key
   end
