@@ -1,0 +1,12 @@
+<h2>Secrypto</h2>
+<p class="lead">
+  This API 
+</p>
+
+<h4> Encrypt </h3>
+<%= raw(CodeRay.scan("curl --data 'text=ciao' https://secrypto.herokuapp.com/api/encrypt'", :bash).div(:line_numbers => false)) %>
+
+<br>
+
+<h4> Decrypt </h3>
+<%= raw(CodeRay.scan("curl --data 'key=<key received>' https://secrypto.herokuapp.com/api/decrypt'", :bash).div(:line_numbers => false)) %>

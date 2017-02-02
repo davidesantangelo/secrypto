@@ -16,7 +16,7 @@ class Document < ActiveRecord::Base
 
   def self.generate_key
     loop do
-      key = SecureRandom.urlsafe_base64
+      key = SecureRandom.urlsafe_base64(32)
       break key unless Document.where(key: key).first
     end
   end
