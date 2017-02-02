@@ -1,7 +1,9 @@
 <h2>Secrypto</h2>
 <p class="lead">
-  This API 
+  This API Allow to encrypt/decrypt text
 </p>
+
+<br>
 
 <h4> Encrypt </h3>
 <%= raw(CodeRay.scan("curl --data 'text=ciao' https://secrypto.herokuapp.com/api/encrypt'", :bash).div(:line_numbers => false)) %>
@@ -10,3 +12,8 @@
 
 <h4> Decrypt </h3>
 <%= raw(CodeRay.scan("curl --data 'key=<key received>' https://secrypto.herokuapp.com/api/decrypt'", :bash).div(:line_numbers => false)) %>
+
+<br>
+<br>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=davidesantangelo&repo=secrypto&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
