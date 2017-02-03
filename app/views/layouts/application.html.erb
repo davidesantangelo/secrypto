@@ -7,13 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= yield %>
+  <div class="container"> 
+        <%= yield %>
   </div>
-</div>
-
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Made by <a href="https://twitter.com/daviducolo"> Davide Santangelo</span>
+    </div>
+  </footer>
 </body>
 </html>

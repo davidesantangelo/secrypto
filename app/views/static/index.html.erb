@@ -5,14 +5,14 @@
 
 <br>
 
-<h4> Encrypt </h3>
-<%= raw(CodeRay.scan("curl --data \"text=ciao\" https://secrypto.herokuapp.com/api/encrypt'", :bash).div(:line_numbers => false)) %>
-
+<h4> Encrypt </h4>
+<%= raw(CodeRay.scan("curl --data \"text=i am a ruby developer\" https://secrypto.herokuapp.com/api/encrypt", :bash).div(:line_numbers => false)) %>
+<%= raw(CodeRay.scan("{\"key\": \"QhmJQOpBcUo-QQOZUrbDScWGWjL8cNMTu4vRXjvX5cA\"}", :bash).div(:line_numbers => false)) %>
 <br>
 
-<h4> Decrypt </h3>
-<%= raw(CodeRay.scan("curl --data \"key=<key received>\" https://secrypto.herokuapp.com/api/decrypt'", :bash).div(:line_numbers => false)) %>
-
+<h4> Decrypt </h4>
+<%= raw(CodeRay.scan("curl --data \"key=QhmJQOpBcUo-QQOZUrbDScWGWjL8cNMTu4vRXjvX5cA\" https://secrypto.herokuapp.com/api/decrypt", :bash).div(:line_numbers => false)) %>
+<%= raw(CodeRay.scan("{\"text\": \"i am a ruby developer\"}", :bash).div(:line_numbers => false)) %>
 <br>
 <br>
 
