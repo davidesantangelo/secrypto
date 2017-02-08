@@ -10,7 +10,7 @@ A simple API that allow to encrypt/decrypt text. API store the data encrypted in
 
 == encrypt
 
- curl --data "text=ciao" https://secrypto.herokuapp.com/api/encrypt
+ curl --data "text=i am a ruby developer" https://secrypto.herokuapp.com/api/encrypt
 
 == decrypt
 
