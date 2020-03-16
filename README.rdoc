@@ -2,10 +2,6 @@
 
 A simple API that allow to encrypt/decrypt text. API store the data encrypted in the database and returns the key to access it.
 
-== live
-
-https://secrypto.herokuapp.com
-
 == getting started
 
  git clone https://github.com/davidesantangelo/secrypto.git
